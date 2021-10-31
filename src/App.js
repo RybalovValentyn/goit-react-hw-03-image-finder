@@ -4,7 +4,7 @@ import Searchbar from "./components/Searchbar";
 import { ToastContainer } from 'react-toastify';
 import API from "./components/Api";
 import Modal from "./components/Modal";
-
+import s from './components/imageFinder.module.css'
 
 class App extends Component {
   state = {
@@ -32,7 +32,7 @@ render(){
 
   return (
 <div 
-// className={s.App}
+className={s.App}
 >
 <Searchbar searchPics = {this.handleSearch}/>
 <API imageSearch={this.state.searchQuery} togle={this.toggleModal} />

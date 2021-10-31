@@ -4,7 +4,7 @@ import s from './imageFinder.module.css'
 export default function Button ({loadMore}) {
 
   window.scrollTo({
-    top: document.documentElement.scrollHeight,
+    top: (document.documentElement.scrollHeight - 1400),
      behavior: 'smooth',
    });
 

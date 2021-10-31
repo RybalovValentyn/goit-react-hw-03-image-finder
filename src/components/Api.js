@@ -2,7 +2,6 @@ import { Component } from "react";
 import Preloading from "./Loader"
 import ImageGallery from './/ImageGallery'
 import Button from './Button'
-// import Preloading from './Loader'
 export default class API extends Component {
 
     state = {
@@ -69,9 +68,7 @@ this.props.togle(imageId)
 }
 
 handleLoadMore = () =>{
-    window.scrollTo({
-        top: document.documentElement.scrollHeight,
-              });
+   
 console.log('dslkfnvdfvev');
 this.setState(prevState => ({
     page: prevState.page + 1
